@@ -6,19 +6,37 @@ from .models import Category, Product
 class CategoryType(DjangoObjectType):
   class Meta:
     model = Category
+    filter_fields = ['name',]
 
 
 class ProductType(DjangoObjectType):
   class Meta:
     model = Product
+    filter_fields = ['name', 'price']
 
 
 class Query:
   all_categories = graphene.List(CategoryType)
   all_products = graphene.List(ProductType)
 
+  category = graphene.Field(CategoryType, id=graphene.Int( ),
+                            name=graphene.String( ))
+  product = graphene.Field(ProductType, id=graphene.Int( ))
+
   def resolve_all_categories(self, info, **kwargs):
-    return Category.objects.all()
+    return Category.objects.all( )
 
   def resolve_all_products(self, info, **kwargs):
-    return Product.objects.all()
+    return Product.objects.select_related('category').all( )
+
+  def resolve_category(self, info, **kwargs):
+    if 'id' in kwargs:
+      return Category.objects.get(id=kwargs['id'])
+    if 'name' in kwargs:
+      return Category.objects.get(name=kwargs['name'])
+    return None
+
+  def resolve_product(self, info, **kwargs):
+    if 'id' in kwargs:
+      return Product.objects.get(id=kwargs['id'])
+    return None
