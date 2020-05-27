@@ -16,5 +16,5 @@ class Product(models.Model):
   description = models.TextField( )
   category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
 
-  def __str__(self):
+  def __str__(selfg):
     return self.name

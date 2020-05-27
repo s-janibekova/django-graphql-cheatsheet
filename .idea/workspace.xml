@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d88badf-d095-40f6-81f2-be9884106b88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gqlshop/catalog/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/gqlshop/catalog/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gqlshop/gqlshop/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/gqlshop/gqlshop/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gqlshop/catalog/schema.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="123">
@@ -30,6 +29,15 @@
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -102,6 +110,7 @@
         <option value="$PROJECT_DIR$/gqlshop/gqlshop/urls.py" />
         <option value="$PROJECT_DIR$/gqlshop/gqlshop/schema.py" />
         <option value="$PROJECT_DIR$/gqlshop/catalog/schema.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -132,18 +141,6 @@
             <path>
               <item name="DjangoGraphQL" type="b2602c69:ProjectViewProjectNode" />
               <item name="DjangoGraphQL" type="462c0819:PsiDirectoryNode" />
-              <item name="gqlshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DjangoGraphQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DjangoGraphQL" type="462c0819:PsiDirectoryNode" />
-              <item name="gqlshop" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DjangoGraphQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DjangoGraphQL" type="462c0819:PsiDirectoryNode" />
-              <item name="gqlshop" type="462c0819:PsiDirectoryNode" />
               <item name="gqlshop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -189,7 +186,7 @@
     <frame x="-6" y="0" width="714" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.55198777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -203,7 +200,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.504749" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.504749" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -277,6 +274,13 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
         </state>
       </provider>
     </entry>
