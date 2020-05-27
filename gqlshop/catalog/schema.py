@@ -18,6 +18,24 @@ class ProductType(DjangoObjectType):
     filter_fields = ['name', 'price']
 
 
+
+# to add changes
+class CartMutation(graphene.Mutation):
+  class Arguments:
+    product_id = graphene.Int()
+    quantity = graphene.Int(required=True)
+  result = graphene.Boolean()
+
+  def mutate(self, info, product_id, quantity):
+    print(info)
+    print(product_id, quantity)
+    return {'result': True}
+
+
+class Mutation:
+  add_to_cart = CartMutation.Field()
+
+
 class Query:
   all_categories = DjangoFilterConnectionField(CategoryType)
   # all_categories = graphene.List(CategoryType)
